@@ -91,6 +91,7 @@ body {
 
 .contaner > div > div > span {
   font-size: 15px;
+  transition: 500ms;
 }
 
 .contaner > div > div > ion-icon {
@@ -136,7 +137,10 @@ body {
 
 .contaner > div:hover > div > ion-icon {
   color: #ffffff;
-  /* transform: scale(1.1); */
+}
+
+.contaner > div:hover > div > span {
+  color: #fff;
 }
 
 .contaner > div > div {
