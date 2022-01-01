@@ -34,6 +34,7 @@ body {
   cursor: pointer;
   user-select: none;
   transition: 500ms;
+  box-shadow: black 0px 0px 13px -5px;
 }
 
 .contaner > div:nth-child(1) {
