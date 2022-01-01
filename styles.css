@@ -103,11 +103,6 @@ body {
   transform: scale(1.8) rotate(-45deg);
 }
 
-.contaner > div:nth-child(8):hover > div {
-  transition-delay: 0.5s;
-  transform: scale(1.8) rotate(-45deg);
-}
-
 .contaner > div:nth-child(2) > div > ion-icon,
 .contaner > div:nth-child(3) > div > ion-icon,
 .contaner > div:nth-child(5) > div > ion-icon,
@@ -271,4 +266,15 @@ body {
 }
 
 @media screen and (max-width: 870px) {
+  .contaner {
+    transform: rotate(135deg);
+  }
+
+  .contaner > div > div {
+    transform: rotate(-135deg);
+  }
+
+  .contaner > div:hover > div {
+    transform: scale(1.8) rotate(-135deg);
+  }
 }
