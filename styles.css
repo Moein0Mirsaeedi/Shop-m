@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +28,12 @@ body {
 }
 
 .contaner > div {
-  background-color: #D7D2C5;
-  border-radius: 5px;
+  background-color: #d7d2c5;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  transition: 500ms;
 }
 
 .contaner > div:nth-child(1) {
@@ -68,4 +74,201 @@ body {
 
 .contaner > div:nth-child(10) {
   grid-area: 5 / 7 / 6 / 8;
+}
+
+.contaner > div > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotate(-45deg);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.contaner > div > div > span {
+  font-size: 15px;
+}
+
+.contaner > div > div > ion-icon {
+  color: #f5283b;
+  font-size: 20px;
+  transition: 500ms;
+}
+
+.contaner > div:hover > div {
+  transition-delay: 0.7s;
+  transform: scale(1.8) rotate(-45deg);
+}
+
+.contaner > div:nth-child(8):hover > div {
+  transition-delay: 0.5s;
+  transform: scale(1.8) rotate(-45deg);
+}
+
+.contaner > div:nth-child(2) > div > ion-icon,
+.contaner > div:nth-child(3) > div > ion-icon,
+.contaner > div:nth-child(5) > div > ion-icon,
+.contaner > div:nth-child(6) > div > ion-icon,
+.contaner > div:nth-child(7) > div > ion-icon,
+.contaner > div:nth-child(9) > div > ion-icon {
+  font-size: 60px;
+}
+
+.contaner > div:nth-child(2) > div > span,
+.contaner > div:nth-child(3) > div > span,
+.contaner > div:nth-child(5) > div > span,
+.contaner > div:nth-child(6) > div > span,
+.contaner > div:nth-child(7) > div > span,
+.contaner > div:nth-child(9) > div > span {
+  font-size: 18px;
+}
+
+.contaner > div:nth-child(8) > div > ion-icon {
+  font-size: 150px;
+}
+
+.contaner > div:nth-child(8) > div > span {
+  font-size: 30px;
+}
+
+.contaner > div:hover {
+  background-color: #f5283b;
+}
+
+.contaner > div:hover > div > ion-icon {
+  color: #ffffff;
+  /* transform: scale(1.1); */
+}
+
+.contaner > div > div {
+  transition: all 500ms;
+}
+
+.contaner > div:nth-child(1):hover {
+  animation-name: hover1;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+@keyframes hover1 {
+  to {
+    grid-area: 1 / 3 / 3 / 5;
+  }
+}
+
+.contaner > div:nth-child(2):hover {
+  animation-name: hover2;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.contaner > div:nth-child(3):hover {
+  animation-name: hover2;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.contaner > div:nth-child(6):hover {
+  animation-name: hover2;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.contaner > div:nth-child(7):hover {
+  animation-name: hover2;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+@keyframes hover2 {
+  to {
+    grid-area: 1 / 5 / 5 / 9;
+  }
+}
+
+.contaner > div:nth-child(4):hover {
+  animation-name: hover3;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+@keyframes hover3 {
+  to {
+    grid-area: 3 / 1 / 5 / 3;
+  }
+}
+
+.contaner > div:nth-child(5):hover {
+  animation-name: hover4;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.contaner > div:nth-child(9):hover {
+  animation-name: hover4;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+@keyframes hover4 {
+  to {
+    grid-area: 3 / 3 / 7 / 7;
+  }
+}
+
+.contaner > div:nth-child(10):hover {
+  animation-name: hover5;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+@keyframes hover5 {
+  to {
+    grid-area: 5 / 7 / 7 / 9;
+  }
+}
+
+.contaner > div:nth-child(8):hover {
+  animation-name: hover6;
+  animation-duration: 1s;
+  background-color: #f5283cd7;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+@keyframes hover6 {
+  to {
+    grid-area: 3 / 1 / 9 / 7;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contaner {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 870px) {
 }
